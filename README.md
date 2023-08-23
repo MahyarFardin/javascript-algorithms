@@ -311,10 +311,19 @@ npm test -- 'playground'
 - [▶ Data Structures and Algorithms on YouTube](https://www.youtube.com/playlist?list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8)
 - [✍🏻 Data Structure Sketches](https://okso.app/showcase/data-structures)
 
-### Big O Notation
+### Asymptotic Notation
 
-*Big O notation* is used to classify algorithms according to how their running time or space requirements grow as the input size grows.
-On the chart below you may find most common orders of growth of algorithms specified in Big O notation.
+Asymptotic notations including O (big o), o (small o), Θ (theta), Ω (big omega), ω (small omega) are used to classify algorithms according to how their running time or space requirements grow as the input size grows, recall that we use these as a sign for growth and we **do not** put the exact growth function for notations (instead we omit the coefficiencies and constant terms); as an example, the *O* form of 2n<sup>2</sup>+1 would be O(n<sup>2</sup>),  O(n<sup>3</sup>) or even  O(n<sup>n</sup>).
+
+*Now the question is, what is the difference between O, Θ, Ω?*
+
+In simple terms, they give us the boundaries! O is the upper bound (given function and its stronger friends :) ), Ω is the lower bound (given function and its weaker friends), and about the Θ; we use that when big O and Ω of an algorithm are equal.
+
+Fun fact, if any notation of an algorithm,(or function to be more precise) is 1 (i.e. O(1)); it means that the algorithm is independent of the number of inputs or, in other words, the input size will not affect the time or memory as it grows.
+
+[For more details and brain damage refer to this page :)](https://www.tutorialspoint.com/data_structures_algorithms/asymptotic_analysis.html)
+
+On the chart below you may find the most common orders of growth of algorithms specified in Big O notation.
 
 ![Big O graphs](./assets/big-o-graph.png)
 
